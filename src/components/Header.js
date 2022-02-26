@@ -1,10 +1,10 @@
 import React from 'react'
 
-export const Header = () => {
+const Header = () => {
   return (
     <>
     <h1>Hangman</h1>
-    <p>Find the hidden word - Enter a letter</p>
+    <p>Find the hidden word - enter a letter</p>
     </>
   )
 }
