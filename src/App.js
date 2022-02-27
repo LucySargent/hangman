@@ -48,6 +48,18 @@ function App() {
     //anytime dependencies are updated the eventListener is called
   },[correctLetters, wrongLetters, playable]);
 
+  function playAgain() {
+    setPlayable(true)
+
+    //empty the arrays
+    setCorrectLetters([])
+    setWrongLetters([])
+
+    //give us a new word
+    const random = Math.floor(Math.random() * words.length)
+    selectedWord = words[random]
+  }
+
   return (
     <>
       <Header />
@@ -56,7 +68,7 @@ function App() {
         <WrongLetters wrongLetters={wrongLetters}/>
         <Word selectedWord={selectedWord} correctLetters={correctLetters}/>
       </div>
-        <Popup />
+        <Popup correctLetters={correctLetters} wrongLetters={wrongLetters} selectedWord={selectedWord} setPlayable={setPlayable} playAgain={playAgain}/>
         <Notification showNotification={showNotification}/>
     </>
   );
