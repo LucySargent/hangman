@@ -8,7 +8,7 @@ import Notification from "./components/Notification"
 import { showNotification as show } from "./helpers/helpers"
 import './App.css'
 
-const words = ['application', 'programming', 'interface', 'wizard']
+const words = ['application', 'programming', 'interface', 'wizard', 'attractive', 'beautiful', 'charming', 'cute', 'elegant', 'ridiculous', 'graceful', 'handsome', 'lovely', 'neat', 'pleasant', 'little', 'microwave', 'dingo', 'rabbit', 'ibex', 'crikey', 'train', 'banana', 'dragonfruit','hospital', 'ambulance', 'elephant', 'extravagant', 'tuxedo', 'vivid', 'yacht', 'wombat', 'fantastic', 'lullaby', 'vacuum', 'dishwasher', 'bison', 'orangutan', 'doctor', 'mother', 'grandpa', 'extraordinary']
 let selectedWord = words[Math.floor(Math.random() * words.length)]
 
 function App() {
